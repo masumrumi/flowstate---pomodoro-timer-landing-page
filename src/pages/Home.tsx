@@ -344,7 +344,7 @@ const Footer = () => {
       </div>
 
       <p className="text-center text-gray-700 text-xs font-bold mt-16 tracking-widest uppercase">
-        © 2026 FlowState Productivity Lab. Built with passion in California.
+        © 2026 FlowState Productivity Lab. Built with passion from New York City.
       </p>
     </footer>
   );
