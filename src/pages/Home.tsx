@@ -48,19 +48,26 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4 ${scrolled ? 'bg-black/80 backdrop-blur-xl border-b border-white/5 py-3' : 'bg-transparent'
       }`}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-2 group cursor-pointer">
+        <div className="flex items-center gap-2 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <div className="w-9 h-9 bg-[#FF5733] rounded-xl flex items-center justify-center font-bold text-white shadow-lg transition-transform group-hover:scale-110">F</div>
           <span className="text-xl font-bold tracking-tight text-white">FlowState</span>
         </div>
 
         <div className="hidden md:flex items-center gap-10 text-sm font-semibold text-gray-400">
-          <a href="#features" className="hover:text-[#FF5733] transition-colors">Features</a>
-          <a href="#insights" className="hover:text-[#FF5733] transition-colors">Insights</a>
-          <a href="#themes" className="hover:text-[#FF5733] transition-colors">Themes</a>
+          <button onClick={() => scrollToSection('features')} className="hover:text-[#FF5733] transition-colors">Features</button>
+          <button onClick={() => scrollToSection('insights')} className="hover:text-[#FF5733] transition-colors">Insights</button>
+          <button onClick={() => scrollToSection('themes')} className="hover:text-[#FF5733] transition-colors">Themes</button>
         </div>
 
         <div className="flex items-center gap-4">
