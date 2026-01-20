@@ -64,10 +64,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="hidden sm:block text-sm font-bold text-white/70 hover:text-white transition-colors">Log In</button>
-          <button className="bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold hover:bg-gray-200 transition-all shadow-xl active:scale-95">
-            Get Pro
-          </button>
+          {/* Buttons removed as requested */}
         </div>
       </div>
     </nav>
