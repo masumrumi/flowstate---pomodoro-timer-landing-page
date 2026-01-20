@@ -20,7 +20,7 @@ const Support = () => {
                         </div>
                         <h3 className="text-2xl font-bold mb-2">Email Us</h3>
                         <p className="text-gray-400 mb-6">For general inquiries and bug reports.</p>
-                        <a href="mailto:support@flowstate.app" className="text-[#FF5733] font-bold hover:underline">support@flowstate.app</a>
+                        <a href="mailto:masumrumi1@gmail.com" className="text-[#FF5733] font-bold hover:underline">masumrumi1@gmail.com</a>
                     </div>
 
                     <div className="p-8 rounded-3xl glass border border-white/10 hover:border-blue-500/50 transition-colors group">
