@@ -2,7 +2,7 @@
   "name": "flowstate---pomodoro-timer-landing-page",
   "private": true,
   "homepage": "https://masumrumi.github.io/flowstate---pomodoro-timer-landing-page",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
