@@ -1,15 +1,15 @@
 
 import React, { useEffect, useState } from 'react';
-import { 
-  Cloud, 
-  Flame, 
-  ShieldCheck, 
-  Lock, 
-  ArrowRight, 
-  LayoutGrid, 
-  Activity, 
-  Apple, 
-  Twitter, 
+import {
+  Cloud,
+  Flame,
+  ShieldCheck,
+  Lock,
+  ArrowRight,
+  LayoutGrid,
+  Activity,
+  Apple,
+  Twitter,
   Github,
   Monitor,
   Smartphone,
@@ -22,14 +22,14 @@ import {
 
 // --- Constants ---
 const IMAGES = {
-  timerDark: './input_file_10.png',
-  timerLight: './input_file_3.png',
-  plannerDark: './input_file_9.png',
-  insightsYearDark: './input_file_6.png',
-  insightsMonthDark: './input_file_7.png',
-  insightsDayDark: './input_file_8.png',
-  settingsDark: './input_file_5.png',
-  proDark: './input_file_4.png',
+  timerDark: '/images/IMG_0206.PNG',
+  timerLight: '/images/IMG_0207.PNG',
+  plannerDark: '/images/IMG_0208.PNG',
+  insightsYearDark: '/images/IMG_0209.PNG',
+  insightsMonthDark: '/images/IMG_0210.PNG',
+  insightsDayDark: '/images/IMG_0211.PNG',
+  settingsDark: '/images/IMG_0212.PNG',
+  proDark: '/images/IMG_0213.PNG',
 };
 
 // --- Components ---
@@ -44,15 +44,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4 ${
-      scrolled ? 'bg-black/80 backdrop-blur-xl border-b border-white/5 py-3' : 'bg-transparent'
-    }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4 ${scrolled ? 'bg-black/80 backdrop-blur-xl border-b border-white/5 py-3' : 'bg-transparent'
+      }`}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-2 group cursor-pointer">
           <div className="w-9 h-9 bg-[#FF5733] rounded-xl flex items-center justify-center font-bold text-white shadow-lg transition-transform group-hover:scale-110">F</div>
           <span className="text-xl font-bold tracking-tight text-white">FlowState</span>
         </div>
-        
+
         <div className="hidden md:flex items-center gap-10 text-sm font-semibold text-gray-400">
           <a href="#features" className="hover:text-[#FF5733] transition-colors">Features</a>
           <a href="#insights" className="hover:text-[#FF5733] transition-colors">Insights</a>
@@ -72,10 +71,9 @@ const Navbar = () => {
 
 const AppMockup = ({ src, className = "", scale = 1, isLight = false }: { src: string, className?: string, scale?: number, isLight?: boolean }) => {
   return (
-    <div 
-      className={`relative rounded-[3.5rem] p-[10px] shadow-2xl overflow-hidden group transition-all duration-700 ${
-        isLight ? 'bg-gray-200 ring-1 ring-gray-300' : 'bg-[#1a1a1a] ring-1 ring-white/10'
-      } ${className}`}
+    <div
+      className={`relative rounded-[3.5rem] p-[10px] shadow-2xl overflow-hidden group transition-all duration-700 ${isLight ? 'bg-gray-200 ring-1 ring-gray-300' : 'bg-[#1a1a1a] ring-1 ring-white/10'
+        } ${className}`}
       style={{ transform: `scale(${scale})` }}
     >
       {/* Dynamic Island */}
@@ -83,15 +81,15 @@ const AppMockup = ({ src, className = "", scale = 1, isLight = false }: { src: s
         <div className="w-1.5 h-1.5 rounded-full bg-blue-500/40 mr-1.5"></div>
         <div className="w-6 h-1 rounded-full bg-white/10"></div>
       </div>
-      
+
       {/* Screen Reflection Overlay */}
       <div className="absolute inset-0 z-20 pointer-events-none bg-gradient-to-tr from-white/5 via-transparent to-white/10 opacity-30"></div>
-      
+
       {/* Screen Container */}
       <div className={`w-full h-full rounded-[2.8rem] overflow-hidden relative ${isLight ? 'bg-white' : 'bg-black'}`}>
-        <img 
-          src={src} 
-          alt="App Preview" 
+        <img
+          src={src}
+          alt="App Preview"
           className="w-full h-full object-cover select-none transition-transform duration-1000 group-hover:scale-105"
           loading="lazy"
         />
@@ -107,7 +105,7 @@ const Hero = () => {
     <section className="relative pt-48 pb-32 px-6 overflow-hidden">
       {/* Background Blurs */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[600px] bg-gradient-to-b from-[#FF5733]/20 via-transparent to-transparent blur-[120px] -z-10"></div>
-      
+
       <div className="max-w-7xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8 animate-fade-in">
           <span className="relative flex h-2 w-2">
@@ -123,11 +121,11 @@ const Hero = () => {
             Flow State.
           </span>
         </h1>
-        
+
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
           The professional Pomodoro timer for Apple enthusiasts. Designed for focus, built for productivity, and refined for the modern workspace.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mb-24">
           <button className="w-full sm:w-auto bg-[#FF5733] text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-[#e44d2d] transition-all accent-glow flex items-center justify-center gap-3 group active:scale-95">
             <Apple size={24} fill="currentColor" />
@@ -143,11 +141,11 @@ const Hero = () => {
           <div className="absolute bottom-0 z-20 transform-gpu translate-y-8 animate-float">
             <AppMockup src={IMAGES.timerDark} className="w-[280px] h-[580px] md:w-[320px] md:h-[680px] shadow-2xl" />
           </div>
-          
+
           <div className="absolute bottom-12 left-1/2 -translate-x-[420px] hidden lg:block rotate-[-12deg] z-10 opacity-40 hover:opacity-100 hover:rotate-[-5deg] transition-all duration-700">
             <AppMockup src={IMAGES.plannerDark} className="w-[260px] h-[550px]" />
           </div>
-          
+
           <div className="absolute bottom-12 left-1/2 translate-x-[160px] hidden lg:block rotate-[12deg] z-10 opacity-40 hover:opacity-100 hover:rotate-[5deg] transition-all duration-700">
             <AppMockup src={IMAGES.insightsMonthDark} className="w-[260px] h-[550px]" />
           </div>
@@ -176,9 +174,9 @@ const FeaturesGrid = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <BentoFeature 
-          icon={Lock} 
-          title="Strict Mode" 
+        <BentoFeature
+          icon={Lock}
+          title="Strict Mode"
           desc="The most unbreakable focus mode in the App Store. Disable pauses and app-switching until your timer is finished."
           className="md:col-span-1"
         />
@@ -194,22 +192,22 @@ const FeaturesGrid = () => {
             <AppMockup src={IMAGES.settingsDark} className="w-[240px] h-[480px] -mb-32 translate-y-12 rotate-3 group-hover:rotate-0 transition-transform duration-700" />
           </div>
         </div>
-        
-        <BentoFeature 
-          icon={Cloud} 
-          title="Universal Sync" 
+
+        <BentoFeature
+          icon={Cloud}
+          title="Universal Sync"
           desc="Synchronize your work sessions and streaks effortlessly across iPhone, iPad, Mac, and Apple Watch."
           color="#60a5fa"
         />
-        <BentoFeature 
-          icon={Flame} 
-          title="Daily Momentum" 
+        <BentoFeature
+          icon={Flame}
+          title="Daily Momentum"
           desc="Build and maintain focus streaks. Visual feedback keeps you motivated to show up every single day."
           color="#f97316"
         />
-        <BentoFeature 
-          icon={ShieldCheck} 
-          title="Privacy First" 
+        <BentoFeature
+          icon={ShieldCheck}
+          title="Privacy First"
           desc="No account required. Your data never leaves your device and iCloud storage. Absolute privacy, guaranteed."
           color="#4ade80"
         />
@@ -222,7 +220,7 @@ const DataSection = () => {
   return (
     <section id="insights" className="py-32 bg-[#050505] relative overflow-hidden">
       <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, #FF5733 0%, transparent 50%)' }}></div>
-      
+
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-24">
           <div className="flex-1 relative order-2 lg:order-1">
@@ -237,7 +235,7 @@ const DataSection = () => {
               <AppMockup src={IMAGES.insightsMonthDark} className="w-[200px] h-[450px]" />
             </div>
           </div>
-          
+
           <div className="flex-1 space-y-8 order-1 lg:order-2">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest">
               Advanced Metrics
@@ -246,7 +244,7 @@ const DataSection = () => {
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed font-medium">
               Every second is a data point. Our intuitive visualizations help you understand your productivity rhythms with surgical precision.
             </p>
-            
+
             <div className="grid grid-cols-2 gap-4">
               {[
                 { label: 'Avg Session', value: '26m', color: '#FF5733' },
@@ -271,7 +269,7 @@ const ThemeSwitcher = () => {
   return (
     <section id="themes" className="py-32 px-6 max-w-7xl mx-auto text-center">
       <h2 className="text-4xl md:text-6xl font-black mb-16 tracking-tight">Elegance in Every Pixel.</h2>
-      
+
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24">
         <div className="space-y-8 group cursor-pointer">
           <div className="relative">
@@ -306,14 +304,14 @@ const Footer = () => {
       <div id="download" className="glass rounded-[3.5rem] p-12 md:p-24 text-center relative overflow-hidden mb-32 border border-white/10">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#FF5733]/20 blur-[100px] -z-10"></div>
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600/10 blur-[100px] -z-10"></div>
-        
+
         <h2 className="text-5xl md:text-8xl font-black mb-10 leading-[1.0] tracking-tighter">Ready to enter<br />your zone?</h2>
         <div className="flex flex-col items-center gap-12">
           <button className="bg-white text-black px-12 py-6 rounded-full text-2xl font-black hover:bg-gray-200 transition-all shadow-2xl active:scale-95 flex items-center gap-4">
             <Apple size={36} fill="currentColor" />
             Get Started Free
           </button>
-          
+
           <div className="flex gap-12 items-center text-gray-500">
             {[Smartphone, Tablet, Monitor].map((Icon, i) => (
               <div key={i} className="flex flex-col items-center gap-2 hover:text-white transition-colors cursor-pointer">
@@ -330,7 +328,7 @@ const Footer = () => {
           <div className="w-10 h-10 bg-[#FF5733] rounded-xl flex items-center justify-center font-black text-white shadow-lg text-lg">F</div>
           <span className="text-2xl font-black tracking-tight text-white">FlowState</span>
         </div>
-        
+
         <div className="flex flex-wrap justify-center gap-10 text-sm font-bold text-gray-500 tracking-widest uppercase">
           <a href="#" className="hover:text-white transition-colors">Privacy</a>
           <a href="#" className="hover:text-white transition-colors">Terms</a>
@@ -342,7 +340,7 @@ const Footer = () => {
           <a href="#" className="hover:text-white transition-all transform hover:scale-110"><Github size={22} /></a>
         </div>
       </div>
-      
+
       <p className="text-center text-gray-700 text-xs font-bold mt-16 tracking-widest uppercase">
         © 2026 FlowState Productivity Lab. Built with passion in California.
       </p>
@@ -363,9 +361,10 @@ function App() {
         <ThemeSwitcher />
       </main>
       <Footer />
-      
+
       {/* Global CSS Inject */}
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes float {
           0%, 100% { transform: translateY(0px) rotate(0deg); }
           50% { transform: translateY(-20px) rotate(1deg); }
