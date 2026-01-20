@@ -1,9 +1,9 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Privacy from './pages/Privacy';
-import Terms from './pages/Terms';
-import Support from './pages/Support';
+import Home from './src/pages/Home';
+import Privacy from './src/pages/Privacy';
+import Terms from './src/pages/Terms';
+import Support from './src/pages/Support';
 import ScrollToTop from './components/ScrollToTop';
 
 // Simple ScrollToTop component to ensure pages start at the top
