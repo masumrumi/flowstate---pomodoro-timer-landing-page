@@ -21,15 +21,19 @@ import {
 } from 'lucide-react';
 
 // --- Constants ---
+const basePath = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
 const IMAGES = {
-  timerDark: '/images/IMG_0206.PNG',
-  timerLight: '/images/IMG_0207.PNG',
-  plannerDark: '/images/IMG_0208.PNG',
-  insightsYearDark: '/images/IMG_0209.PNG',
-  insightsMonthDark: '/images/IMG_0210.PNG',
-  insightsDayDark: '/images/IMG_0211.PNG',
-  settingsDark: '/images/IMG_0212.PNG',
-  proDark: '/images/IMG_0213.PNG',
+  timerDark: `${basePath}images/IMG_0206.PNG`,
+  timerLight: `${basePath}images/IMG_0207.PNG`,
+  plannerDark: `${basePath}images/IMG_0208.PNG`,
+  insightsYearDark: `${basePath}images/IMG_0209.PNG`,
+  insightsMonthDark: `${basePath}images/IMG_0210.PNG`,
+  insightsDayDark: `${basePath}images/IMG_0211.PNG`,
+  settingsDark: `${basePath}images/IMG_0212.PNG`,
+  proDark: `${basePath}images/IMG_0213.PNG`,
 };
 
 // --- Components ---
