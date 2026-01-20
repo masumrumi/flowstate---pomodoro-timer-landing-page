@@ -28,7 +28,7 @@ const basePath = import.meta.env.BASE_URL.endsWith('/')
 
 const IMAGES = {
   timerDark: `${basePath}images/IMG_0206.PNG`,
-  timerLight: `${basePath}images/IMG_0207.PNG`,
+  timerLight: `${basePath}images/IMG_0213.PNG`,
   plannerDark: `${basePath}images/IMG_0208.PNG`,
   insightsYearDark: `${basePath}images/IMG_0209.PNG`,
   insightsMonthDark: `${basePath}images/IMG_0210.PNG`,
