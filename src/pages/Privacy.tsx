@@ -29,14 +29,21 @@ const Privacy = () => {
                     </section>
 
                     <section>
-                        <h2 className="text-2xl font-bold text-white mb-4">3. Third-Party Services</h2>
+                        <h2 className="text-2xl font-bold text-white mb-4">3. Family Controls Entitlement</h2>
+                        <p>
+                            FlowState uses the Family Controls entitlement solely to provide the "Focus Armor" feature, which empowers you to voluntarily block distracting apps during your self-defined focus sessions. This usage is strictly for your individual wellbeing and digital health. We do not use this entitlement to restrict access for family members or managed devices. You maintain full control over which apps are blocked and when.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 className="text-2xl font-bold text-white mb-4">4. Third-Party Services</h2>
                         <p>
                             We may use third-party services for analytics to help us improve the app (e.g., Apple's App Analytics). These services collect anonymous, aggregate data that cannot be used to identify you personally.
                         </p>
                     </section>
 
                     <section>
-                        <h2 className="text-2xl font-bold text-white mb-4">4. Contact Us</h2>
+                        <h2 className="text-2xl font-bold text-white mb-4">5. Contact Us</h2>
                         <p>
                             If you have any questions about this Privacy Policy, please contact us at masumrumi1@gmail.com.
                         </p>

@@ -132,7 +132,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
-          The professional Pomodoro timer for Apple enthusiasts. Designed for focus, built for productivity, and refined for the modern workspace.
+          Designed for <span className="text-gray-200">Individual Wellbeing</span>. FlowState empowers you to voluntarily block distractions during self-defined sessions, reclaiming your attention and digital health. We use the <span className="text-gray-200">Family Controls entitlement</span> strictly to restrict the specific apps you choose—only when you choose.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mb-24">
@@ -178,8 +178,8 @@ const FeaturesGrid = () => {
   return (
     <section id="features" className="py-32 px-6 max-w-7xl mx-auto">
       <div className="text-center mb-20">
-        <h2 className="text-4xl md:text-5xl font-black mb-6">Engineered for Focus.</h2>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto font-medium">FlowState isn't just a timer. It's a complete ecosystem designed to optimize your cognitive performance.</p>
+        <h2 className="text-4xl md:text-5xl font-black mb-6">Engineered for Wellbeing.</h2>
+        <p className="text-gray-400 text-lg max-w-2xl mx-auto font-medium">FlowState isn't just a timer. It's a complete ecosystem designed to optimize your digital health and personal focus.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -195,7 +195,7 @@ const FeaturesGrid = () => {
               <Zap size={28} />
             </div>
             <h3 className="text-2xl font-bold mb-4">Focus Armor</h3>
-            <p className="text-gray-400 leading-relaxed font-medium">Automatic Shielding. FlowState intelligently detects and suppresses notifications from distracting apps during sessions.</p>
+            <p className="text-gray-400 leading-relaxed font-medium">Voluntary Shielding. We use the Family Controls entitlement to restrict access to the apps you specifically choose to block during your sessions.</p>
           </div>
           <div className="flex-1 h-full w-full flex justify-center items-center">
             <AppMockup src={IMAGES.settingsDark} className="w-[240px] h-[480px] -mb-32 translate-y-12 rotate-3 group-hover:rotate-0 transition-transform duration-700" />
@@ -314,7 +314,7 @@ const Footer = () => {
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#FF5733]/20 blur-[100px] -z-10"></div>
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600/10 blur-[100px] -z-10"></div>
 
-        <h2 className="text-5xl md:text-8xl font-black mb-10 leading-[1.0] tracking-tighter">Ready to enter<br />your zone?</h2>
+        <h2 className="text-5xl md:text-8xl font-black mb-10 leading-[1.0] tracking-tighter">Ready to prioritize<br />your wellbeing?</h2>
         <div className="flex flex-col items-center gap-12">
           <button className="bg-white text-black px-12 py-6 rounded-full text-2xl font-black hover:bg-gray-200 transition-all shadow-2xl active:scale-95 flex items-center gap-4">
             <Apple size={36} fill="currentColor" />
